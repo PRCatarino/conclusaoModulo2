@@ -98,28 +98,27 @@
       <tr>
         <td colspan="5"><h1>Fale comigo por aqui</h1></td>
       </tr>
-      <tr VALIGN=top>
+      <tfoot VALIGN=top>
         <td colspan="5">
-          <form method="get" action="https://www.w3schools.com/action_page.php" target="_blank">
+          <form method="post" action="https://www.w3schools.com/action_page.php" target="_blank">
 
-            <label >Nome</label>
-            <input  maxlength="300"style="width:100%;" type="text"placeholder="Escreva o seu nome"/><br/><br/>
+            <label>Nome</label>
+            <input for="name" maxlength="300"style="width:100%;" type="text"placeholder="Escreva o seu nome"/><br/><br/>
 
             <label>E-mail</label>
-      
-            <input maxlength="300"style="width:100%;" type="email" placeholder="Seu melhor email"/><br/><br/>
-            <label>Telefone</label>
-        
-            <input maxlength="300"placeholder="Seu telefone" style="width:100%;" type="number"/><br/><br/>
+            <input for="email" maxlength="100"style="width:100%;" type="email" placeholder="Seu melhor email"/><br/><br/>
 
-            <input maxlength="300" type="submit" value="enviar" >
+            <label>Telefone</label>
+            <input for="number" maxlength="14"placeholder="Seu telefone" style="width:100%;" type="number"/><br/><br/>
+
+            <input maxlength="300" type="submit" value="Enviar" >
           </form>
         </td>
         <td colspan="1">
           <label>Sua mensagem (Até 300 caracteres)</label>
           <textarea style="max-width:360px ; max-height:150px; width: 360px; height: 150px; min-width:100px; min-height: 100px;" maxlength="300" placeholder="Qual o motivo do seu contato"></textarea>
         </td>
-      </tr>
+      </tfoot>
     </tbody>
   </table>
 </body>
